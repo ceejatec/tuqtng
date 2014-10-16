@@ -17,9 +17,9 @@ PROJECT (tuqtng)
 INCLUDE (FindCouchbaseGo)
 
 GoInstall (TARGET cbq PACKAGE github.com/couchbaselabs/tuqtng/cbq
-  GOPATH "${PROJECT_SOURCE_DIR}/../../../.." "${GODEPSPATH}"
+  GOPATH "${PROJECT_SOURCE_DIR}/../../../.." "${GODEPSDIR}"
   INSTALL_PATH bin)
 
 GoInstall (TARGET cbq-engine PACKAGE github.com/couchbaselabs/tuqtng
-  GOPATH "${PROJECT_SOURCE_DIR}/../../../.." "${GODEPSPATH}"
+  GOPATH "${PROJECT_SOURCE_DIR}/../../../.." "${GODEPSDIR}"
   INSTALL_PATH bin OUTPUT cbq-engine)
